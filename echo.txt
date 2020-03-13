@@ -1,9 +1,11 @@
 #!/bin/bash
 
+#prints hello world
 echo "Hello World"
+#inputs new line before and after  the statement
+echo  -e "\n" "Hello there sujay" "\n"
 
-echo  -e "\n" "Hello there1 sujay"
-
-echo -e   "Hello there hello"
-
-echo -e "\b" "hello there whatever"
+#takes input from the user and outputs  it to the screen
+echo "Input your name:"
+read name
+echo "Greetings $name!!!"

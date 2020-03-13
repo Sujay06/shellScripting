@@ -1,9 +1,5 @@
 #! /bin/bash
 
-echo Hello World
-echo -n  Printing text without new line 
-echo -e  "\nprinting  \t with \t tabs \t in \t between\n"
-
 ((sum = 10+10))
 echo "the sum  is: "$sum
 
