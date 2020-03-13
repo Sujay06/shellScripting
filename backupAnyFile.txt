@@ -1,8 +1,8 @@
 #!/bin/bash
 
 user=$(whoami)
-input=/path/to/the/folder/files
-output=/path/to/store/the/backup/${user}_backup_$(date +%Y-%m-%d_%H%M%S).tar.gz
+input=/home/$user/Desktop/files/logs
+output=/home/user/Desktop/files/backups/${user}_backup_$(date +%Y-%m-%d_%H%M%S).tar.gz
 
 function getfiles {
         find $1 -type f | wc -l
