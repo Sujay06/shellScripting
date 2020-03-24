@@ -14,7 +14,7 @@ while true
 do
     for i in $@;do    
         ping -c 5 $i 2>/dev/null
-        if [ $? -ne 0 ];then        #to checl if then host is down
+        if [ $? -ne 0 ];then        #to check if then host is down
              STATUS=$(cat $log.$i)
                 if [ $STATUS != "$i-DOWN!" ];then
                     echo "`date`: ping failed, $i host is down!!" | 
